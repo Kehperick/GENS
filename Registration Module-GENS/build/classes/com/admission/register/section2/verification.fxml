@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stackPane" prefHeight="360.0" prefWidth="380.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.admission.register.section2.VerificationController">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" prefHeight="376.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000032" height="10.0" offsetY="2.0" radius="4.5" width="10.0" />
+         </effect>
+         <children>
+            <Label layoutX="110.0" layoutY="42.0" styleClass="sub-heading" stylesheets="@../../../../registration/module/gens/globalStyle.css" text="Verification" textFill="#2962ff">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="createAccountBtn" layoutX="26.0" layoutY="277.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="59.0" prefWidth="328.0" style="-fx-background-color: #2962ff; -fx-background-radius: 5;" styleClass="medium" text="Create account" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="surnamefield" layoutX="26.0" layoutY="150.0" onAction="#verifyCode" prefHeight="59.0" prefWidth="328.0" promptText="code" style="-fx-background-color: white; -fx-border-color: #2962ff; -fx-border-width: 2; -fx-border-radius: 5;" styleClass="field">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="26.0" layoutY="123.0" styleClass="field" text="enter code sent to your number" textFill="#2962ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#2962ff" layoutX="305.0" layoutY="26.0" radius="8.0" stroke="#ffffff00" strokeType="INSIDE" />
+            <Circle fill="#2962ff" layoutX="329.0" layoutY="26.0" radius="8.0" stroke="#2962ff" strokeType="INSIDE" />
+            <Circle fill="#2962ff" layoutX="354.0" layoutY="26.0" radius="8.0" stroke="#2962ff" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

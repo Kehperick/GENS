@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="708.0" prefWidth="1136.0" style="-fx-background-color: #FEFEFE;" stylesheets="@../../../../registration/module/gens/globalStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.admission.home.homepage.HomepageController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="1136.0" style="-fx-background-color: white;" VBox.vgrow="NEVER">
+         <effect>
+            <DropShadow color="#909090" height="10.0" radius="2.0" width="0.0" />
+         </effect>
+         <children>
+            <Button layoutX="786.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #2962ff; -fx-border-radius: 5; -fx-background-radius: 5;" styleClass="title2" stylesheets="@../../../../registration/module/gens/globalStyle.css" text="Go to dashboard" textFill="WHITE" AnchorPane.rightAnchor="173.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Circle fill="#ff1f1f" layoutX="1114.0" layoutY="30.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="14.0" />
+            <JFXButton layoutX="974.0" layoutY="12.0" prefHeight="26.0" prefWidth="116.0" ripplerFill="#2b64ff60" styleClass="title2" text="Logout" textFill="#2962ff" AnchorPane.rightAnchor="46.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#2962ff" glyphName="ACCOUNT" size="24" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin>
+         <children>
+            <ScrollPane prefHeight="645.0" prefWidth="855.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox prefHeight="682.0" prefWidth="839.0" style="-fx-background-color: white;">
+                     <children>
+                        <StackPane prefHeight="66.0" prefWidth="786.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label style="-fx-background-color: white;" styleClass="header" text="Student Registration Form" textFill="#616161">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <FlowPane alignment="CENTER" prefHeight="57.0" prefWidth="843.0">
+                           <children>
+                              <Button fx:id="oldBtn" mnemonicParsing="false" prefHeight="45.0" prefWidth="170.0" style="-fx-border-radius: 5 0  0 5; -fx-background-radius: 5 0  0 5;" styleClass="title2" text="Old Student" />
+                              <Button fx:id="newBtn" mnemonicParsing="false" prefHeight="45.0" prefWidth="170.0" style="-fx-border-radius: 0 5  5 0; -fx-background-radius: 0 5  5 0;" styleClass="title2" text="New Student" />
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="569.0" prefWidth="280.0" HBox.hgrow="NEVER">
+               <content>
+                  <VBox prefHeight="473.0" prefWidth="278.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

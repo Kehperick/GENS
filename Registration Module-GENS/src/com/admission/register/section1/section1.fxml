@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stackPane" prefHeight="428.0" prefWidth="380.0" style="-fx-border-radius: 15; -fx-background-radius: 15; -fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.admission.register.section1.Section1Controller">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" prefHeight="428.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000032" height="10.0" offsetY="2.0" radius="4.5" width="10.0" />
+         </effect>
+         <children>
+            <Label layoutX="103.0" layoutY="26.0" styleClass="sub-heading" stylesheets="@../../../../registration/module/gens/globalStyle.css" text="Contact Info" textFill="#2962ff">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="nextBtn" layoutX="203.0" layoutY="340.0" mnemonicParsing="false" onAction="#next" prefHeight="59.0" prefWidth="151.0" style="-fx-background-color: #2962ff; -fx-background-radius: 5;" styleClass="medium" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="phoneNumberField" layoutX="26.0" layoutY="138.0" prefHeight="59.0" prefWidth="328.0" promptText="phone number" style="-fx-background-color: white; -fx-border-color: #2962ff; -fx-border-width: 2; -fx-border-radius: 5;" styleClass="field">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailField" layoutX="26.0" layoutY="241.0" prefHeight="59.0" prefWidth="328.0" promptText="email address" style="-fx-background-color: white; -fx-border-color: #2962ff; -fx-border-width: 2; -fx-border-radius: 5;" styleClass="field">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="26.0" layoutY="108.0" styleClass="field" text="Phone number" textFill="#2962ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="214.0" styleClass="field" text="Email address" textFill="#2962ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#2962ff" layoutX="305.0" layoutY="26.0" radius="8.0" stroke="#ffffff00" strokeType="INSIDE" />
+            <Circle fill="#2962ff" layoutX="329.0" layoutY="26.0" radius="8.0" stroke="#2962ff" strokeType="INSIDE" />
+            <Circle fill="#fcfdff" layoutX="354.0" layoutY="26.0" radius="8.0" stroke="#2962ff" strokeType="INSIDE" />
+            <Button fx:id="backBtn" layoutX="26.0" layoutY="340.0" mnemonicParsing="false" onAction="#back" prefHeight="59.0" prefWidth="151.0" style="-fx-background-color: #F5F7FE; -fx-background-radius: 5;" styleClass="medium" text="Back" textFill="#2962ff">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
